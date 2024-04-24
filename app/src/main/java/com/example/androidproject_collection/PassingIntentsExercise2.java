@@ -32,10 +32,16 @@ public class PassingIntentsExercise2 extends AppCompatActivity {
         txtResFirstName.setText(intent.getStringExtra("fname_key"));
         txtResLastName.setText(intent.getStringExtra("lname_key"));
         txtResNationality.setText(intent.getStringExtra("natio_key"));
+
+        txtResGender.setText(intent.getStringExtra("gender_key"));
         txtResBirthDate.setText(intent.getStringExtra("bday_key"));
         txtResPhnNum.setText(intent.getStringExtra("phone_key"));
+
         txtResEmergency.setText(intent.getStringExtra("emerg_key"));
         txtResEmail.setText(intent.getStringExtra("email_key"));
         txtResProg.setText(intent.getStringExtra("prog_key"));
+
+        txtResYear.setText(intent.getStringExtra("year_key"));
+        txtResScholar.setText(intent.getStringExtra("scholar_key"));
     }
 }

@@ -53,7 +53,9 @@
                     android:id="@+id/txtResFirstName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:textColor="#5361DF" />
 
                 <TextView
                     android:id="@+id/textView16"
@@ -67,7 +69,8 @@
                     android:id="@+id/txtResLastName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#5361DF" />
             </LinearLayout>
 
         </LinearLayout>
@@ -91,7 +94,8 @@
                 android:id="@+id/txtResNationality"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textColor="#5361DF" />
 
             <TextView
                 android:id="@+id/textView18"
@@ -105,7 +109,8 @@
                 android:id="@+id/txtResGender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textColor="#5361DF" />
         </LinearLayout>
 
         <LinearLayout
@@ -127,7 +132,8 @@
                 android:id="@+id/txtResBirthDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textColor="#5361DF" />
         </LinearLayout>
 
         <LinearLayout
@@ -149,7 +155,8 @@
                 android:id="@+id/txtResPhnNum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textColor="#5361DF" />
         </LinearLayout>
 
         <LinearLayout
@@ -171,7 +178,8 @@
                 android:id="@+id/txtResEmergency"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textColor="#5361DF" />
         </LinearLayout>
 
         <LinearLayout
@@ -193,7 +201,8 @@
                 android:id="@+id/txtResEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textColor="#5361DF" />
         </LinearLayout>
 
         <TextView
@@ -227,7 +236,8 @@
                 android:id="@+id/txtResProg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textColor="#5361DF" />
 
             <TextView
                 android:id="@+id/real"
@@ -241,7 +251,8 @@
                 android:id="@+id/txtResYear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textColor="#5361DF" />
         </LinearLayout>
 
         <LinearLayout
@@ -263,7 +274,8 @@
                 android:id="@+id/txtResScholar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textColor="#5361DF" />
         </LinearLayout>
 
     </LinearLayout>

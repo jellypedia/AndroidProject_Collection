@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -46,6 +48,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Passing Intents" />
+
+        <Button
+            android:id="@+id/btnFrags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragments" />
+
+        <Button
+            android:id="@+id/btnMenus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menus" />
 
     </LinearLayout>
 

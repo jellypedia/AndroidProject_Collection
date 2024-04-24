@@ -3,6 +3,7 @@ package com.example.androidproject_collection;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -57,16 +58,35 @@ public class PassingIntentsExercise extends AppCompatActivity {
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String gender, scholar;
                 Intent intent = new Intent(PassingIntentsExercise.this, PassingIntentsExercise2.class);
+
+                if(rdFemale.isChecked()) {
+                    gender = "Female";
+                } else if(rdMale.isChecked()) {
+                    gender = "Male";
+                } else {
+                    gender = "Other";
+                }
+
+                if(chkScholar.isChecked()) {
+                    scholar = "Yes";
+                } else {
+                    scholar = "No";
+                }
 
                 intent.putExtra("fname_key", txtFirstName.getText().toString());
                 intent.putExtra("lname_key", txtLastName.getText().toString());
                 intent.putExtra("natio_key", txtNationality.getText().toString());
+                intent.putExtra("gender_key", gender);
                 intent.putExtra("bday_key", txtBirthDate.getText().toString());
                 intent.putExtra("phone_key", txtPhnNum.getText().toString());
                 intent.putExtra("emerg_key", txtEmergency.getText().toString());
                 intent.putExtra("email_key", txtEmail.getText().toString());
                 intent.putExtra("prog_key", txtProg.getText().toString());
+                intent.putExtra("year_key",dropYearLevel.getSelectedItem().toString());
+                intent.putExtra("scholar_key", scholar);
+
 
                 startActivity(intent);
             }
@@ -86,6 +106,7 @@ public class PassingIntentsExercise extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 txtFirstName.setText("");
+                txtFirstName.setTextColor(Color.BLACK);
             }
         });
 
@@ -93,6 +114,7 @@ public class PassingIntentsExercise extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 txtLastName.setText("");
+                txtLastName.setTextColor(Color.BLACK);
             }
         });
 

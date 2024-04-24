@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnTest, btnValentines, btnCalcu, btnMatch3, btnIntents;
+    Button btnTest, btnValentines, btnCalcu, btnMatch3, btnIntents, btnFrags, btnMenus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +57,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent5 = new Intent(MainActivity.this, PassingIntentsExercise.class);
                 startActivity(intent5);
+            }
+        });
+
+        btnMenus = findViewById(R.id.btnMenus);
+        btnMenus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent6 = new Intent(MainActivity.this,MenuExercise.class);
+                startActivity(intent6);
             }
         });
     }
